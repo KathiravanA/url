@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortened URL</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #343a40;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 a {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e9ecef;
+    color: #007bff;
+    transition: background-color 0.3s;
+}
+
+h1 a:hover {
+    background-color: #ced4da;
+}
+
+
+</style>
+</head>
+<body>
+    <h1>Your shortened URL is: <a href="/{{ shorten_url }}">http://127.0.0.1:5000/{{ shorten_url }}</a></h1>
+</body>
+</html>
